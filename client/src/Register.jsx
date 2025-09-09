@@ -10,7 +10,7 @@ const register = () => {
         await axios.post("http://localhost:5000/api/register", form);
         alert("Registration Successful");
     };
-    
+
   return (
     <form>
         <input placeholder="Username"
@@ -22,7 +22,7 @@ const register = () => {
         <input type="password" placeholder="Password" 
         onChange={e => setForm({ ...form, password: e.target.value})} />
 
-        <button>Register</button>
+        <button type="submit" >Register</button>
     </form>
   )
 }
